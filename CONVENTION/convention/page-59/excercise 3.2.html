@@ -1,0 +1,65 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+
+
+   let shoppingList = [];
+   
+
+
+   shoppingList.push("Milk", "Bread", "Apples");
+   
+
+
+   shoppingList.splice(shoppingList.indexOf("Bread"), 1, "Bananas", "Eggs");
+   
+
+
+   let removedItem = shoppingList.pop();
+   console.log(removedItem); 
+   
+   shoppingList.sort();
+   
+
+
+
+   let milkIndex = shoppingList.indexOf("Milk");
+   console.log(milkIndex);
+   
+   shoppingList.splice(shoppingList.indexOf("Bananas") + 1, 0, "Carrots", "Lettuce");
+   
+
+
+   let newList = ["Juice", "Pop"];
+   
+
+
+   shoppingList = shoppingList.concat(newList, newList);
+   
+
+
+    let lastPopIndex = shoppingList.lastIndexOf("Pop");
+    console.log(lastPopIndex); 
+    
+    
+    console.log(shoppingList);
+
+//
+  //  let someValues1 = [1, 2, 3];
+//let someValues2 = [4, 5, 6];
+//let someValues3 = [7, 8, 9];
+//let arrOfArrays = [someValues1, someValues2, someValues3];
+
+//let value1 = arrOfArrays[0][1];
+//let value2 = arrOfArrays[2][2];
+//arrOfArraysOfArrays = [arrOfArrays, arrOfArrays, arrOfArrays];
+//let middleValue = arrOfArraysOfArrays[1][1][1];
+    </script>
+</body>
+</html>

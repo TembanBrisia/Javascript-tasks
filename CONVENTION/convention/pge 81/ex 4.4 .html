@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+// Step 1: Generate a random number between 0 and 5
+const randomValue = Math.floor(Math.random() * 6);
+
+// Step 2: Create a prompt to get user input
+const userInput = prompt("Please enter your question:");
+
+// Step 3: Create responses using a switch statement
+let response;
+switch (randomValue) {
+    case 0:
+        response = "That's a great question!";
+        break;
+    case 1:
+        response = "I can't say for sure, but I have an idea!";
+        break;
+    case 2:
+        response = "The answer might surprise you!";
+        break;
+    case 3:
+        response = "Let me think about that...";
+        break;
+    case 4:
+        response = "Absolutely! It's a possibility.";
+        break;
+    case 5:
+        response = "I'm not sure, but it's worth exploring!";
+        break;
+    default:
+        response = "Hmm, I need more information.";
+}
+
+// Step 4: Create a variable for the final response
+const finalResponse = `You asked: "${userInput}"\nResponse: ${response}`;
+
+// Step 5: Output the final response
+alert(finalResponse);
+
+
+
+    </script>
+</body>
+</html>

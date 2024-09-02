@@ -1,0 +1,79 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+
+
+// Set height in inches and weight in pounds
+let heightInInches = 70; // example height
+let weightInPounds = 150; // example weight
+
+// Convert height to centimeters and weight to kilos
+let heightInCm = heightInInches * 2.54;
+let weightInKilos = weightInPounds / 2.2046;
+
+// Convert height to meters for BMI calculation
+let heightInMeters = heightInCm / 100;
+
+// Calculate BMI
+let bmi = weightInKilos / (heightInMeters ** 2);
+
+// Output results to the console
+console.log(`Height in cm: ${heightInCm.toFixed(2)} cm`);
+console.log(`Weight in kilos: ${weightInKilos.toFixed(2)} kg`);
+console.log(`BMI: ${bmi.toFixed(2)}`);
+
+const c = "5";
+console.log(typeof c);
+const m = 91;
+console.log(typeof m);
+let empty1 = undefined; //line 1
+let empty2 = null; //line 2
+
+let result1 ="empty1  + empty2"
+
+let a = "Hello";
+b = " world";
+console.log(a + b);
+
+let h = "world";
+let g = `Hello ${h}!`;
+console.log(g);
+
+let d = "Hello";
+a = prompt("world");
+console.log(a);
+
+let x = 5;
+let y = 70;
+let z = "5";
+y++;
+console.log(y);
+
+let result = 3 + 4 * 2 / 8; 
+console.log(result)
+
+let firstNum = 5;
+let secondNum = 10;
+firstNum++;
+secondNum--;
+let total = ++firstNum + secondNum;
+console.log(total);
+let total2 = 500 + 100 / 5 + total--;
+console.log(total2);
+
+const e = 5;
+const f = 10;
+console.log(e > 0 && f > 0);
+console.log(e == 5 && f == 4);
+console.log(true ||false);
+console.log(e == 3 || f == 10);
+console.log(a == 3 || b == 7); 
+    </script>
+</body>
+</html>
